@@ -1,0 +1,147 @@
+/* Basics */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+}
+
+a {
+    color: #000;
+}
+
+/* Header and menu */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 20px;
+}
+
+#home {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    margin: 0 0 16px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    margin: 20px 0 6px;
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 0 0 14px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+section ul {
+    margin: 0 0 10px;
+    padding-left: 22px;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#home img {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+footer {
+    padding: 24px 20px;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+/* Back to top button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#back-to-top.show {
+    display: block;
+}
